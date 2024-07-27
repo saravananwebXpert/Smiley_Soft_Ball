@@ -1,0 +1,208 @@
+#face {
+  background-image: radial-gradient(
+    circle,
+    rgb(245, 201, 126),
+    rgb(255, 183, 0),
+    rgb(232, 93, 12)
+  );
+  box-shadow: inset 0 0 15px 15px rgb(229, 146, 3);
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  margin-left: 500px;
+  margin-top: 150px;
+  animation-name: face;
+  animation-duration: 5s;
+  position: absolute;
+}
+#eyebrowleft,
+#eyebrowright {
+  border: 1px solid black;
+  height: 10px;
+  width: 50px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50px;
+  left: 52px;
+}
+#eyebrowleft {
+  transform: rotate(-30deg);
+}
+#eyebrowright {
+  margin-left: 140px;
+  transform: rotate(30deg);
+}
+#eye1,
+#eye2 {
+  border: 1px solid black;
+  height: 50px;
+  width: 40px;
+  background-color: white;
+  box-shadow: inset 0 0 2px 1px black;
+  border-radius: 100%;
+  margin-top: 100px;
+  position: absolute;
+  top: -30px;
+  left: 70px;
+}
+#eye2 {
+  margin-left: 120px;
+}
+#eyeball {
+  border: 1px solid black;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 30px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: rgb(16, 107, 234);
+}
+
+#mouth {
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(233, 51, 81),
+    rgb(238, 165, 165),
+    rgb(250, 10, 50)
+  );
+  height: 45px;
+  width: 90px;
+  border-radius: 0 0 190px 190px;
+  animation-name: mouth;
+  position: absolute;
+  top: 180px;
+  left: 100px;
+}
+#eyeball {
+  animation-name: ball;
+  animation-duration: 5s;
+  position: relative;
+}
+#dark {
+  border: 1px solid black;
+  height: 20px;
+  width: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: black;
+  border-radius: 100%;
+}
+@keyframes ball {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+#mouth {
+  animation-name: mouthh;
+  animation-duration: 7s;
+  position: relative;
+}
+@keyframes mouthh {
+  0% {
+    bottom: 20px;
+  }
+  30% {
+    right: 30px;
+    height: 30px;
+    width: 75px;
+  }
+  40% {
+    height: 10px;
+  }
+  50% {
+    height: 30px;
+  }
+  60% {
+    height: 10px;
+  }
+  70% {
+    height: 30px;
+  }
+  80% {
+    height: 10px;
+  }
+  90% {
+    height: 30px;
+  }
+  100% {
+    bottom: 15px;
+    transform: scaleY(1.4);
+    width: 105px;
+  }
+}
+#eyebrowleft {
+  animation-name: left;
+  animation-duration: 5s;
+}
+#eyebrowright {
+  animation-name: right;
+  animation-duration: 5s;
+}
+@keyframes right {
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes left {
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+#eye2,
+#eye1,
+#eyebrowright,
+#eyebrowleft,
+#face {
+  animation-name: run;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+}
+@keyframes run {
+  25% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#teeth {
+  border: 1px solid black;
+  height: 8px;
+  width: 10px;
+  background-color: white;
+  margin-left: 50px;
+}
+#nose {
+  height: 40px;
+  border-radius: 50%;
+  width: 30px;
+  background-color: #faef6f;
+  margin-left: 50px;
+  position: relative;
+  border: none;
+  top: 130px;
+  left: 80px;
+  box-shadow: 0 0 5px 5px #faef6f;
+}
